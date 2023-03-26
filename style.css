@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body-home {
+    background-color: rgb(73, 55, 33);
+}
+
+.body-location {
+    background-color: rgb(170, 149, 122);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid whitesmoke;
+}
+
+.navbar {
+    display: none;
+}
+
+.icons {
+    padding: 10px;
+}
+
+.icons a {
+    font-size: 50px;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidenav {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+
+    display: grid;
+    place-content: center;
+    gap: 25px;
+}
+
+div:target {
+    right: 0;
+}
+
+.sidenav a {
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 10px 20px;
+    color: gray;
+    border-radius: 15px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    margin-top: -100px;
+    background-image: url(img/banner.jpg);
+
+    padding: 25px;
+    background-size: cover;
+    top: 0;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+
+    display: grid;
+    place-content: center;
+}
+
+.banner-location {
+    width: 100%;
+    height: 100vh;
+    margin-top: -100px;
+    background-image: url(img/banner5.jpg);
+
+    padding: 25px;
+    background-size: cover;
+    top: 0;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+
+    display: grid;
+    place-content: center;
+}
+
+.intro h2, h5 {
+    color: rgb(207, 151, 82);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.50);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.intro h5 {
+    font-size: 25px;
+    font-style: oblique;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.info {
+    height: 450px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+
+    display: grid;
+    align-content: center;
+}
+
+.info:hover {
+    color: rgb(207, 151, 82);
+}
+
+.info h2 {
+    padding: 20px;
+}
+
+.info p {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.order {
+    background-image: url(img/banner4.jpg);
+    width: 100%;
+    height: 80vh;
+
+    padding: 25px;
+    background-size: cover;
+    top: 0;
+    background-position: center;
+    object-fit: cover;
+
+    display: grid;
+    place-content: center;
+}
+
+.link {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.link h1, p, button, a {
+    padding: 20px;
+    text-align: center;
+}
+
+.link h1 {
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link a {
+    width: 300px;
+    transition: all 500ms;
+}
+
+.link button {
+    padding: 18px;
+    color: black;
+    border-radius: 30px;
+    width: 50%;
+    font-size: 15px;
+    background-color: rgb(247, 234, 218);
+    transition: all 500ms;
+}
+
+.link button:hover {
+    background-color: white;
+    color: rgb(207, 151, 82);
+    transform: scale(1.1);
+}
+
+.type-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.type {
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tytext {
+    padding-top: 70px;
+}
+
+.type-img {
+    height: 200px;
+    width: 200px;
+}
+
+.type-img img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.type-des {
+    padding: 20px;
+
+    display: grid;
+    align-content: center;
+    color: rgb(207, 151, 82);
+}
+
+.type-des:hover {
+    color: white;
+}
+
+.journey {
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.journey-text , .tytext {
+    text-align: center;
+    color: rgb(207, 151, 82);
+}
+
+.journey-img {
+    width: 90%;
+    margin: auto;
+    object-fit: cover;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 150px);
+    gap: 15px;
+}
+
+.journey-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.locations {
+    background-color: rgb(207, 151, 82);
+    color: black;
+}
+
+.locations h2 {
+    padding: 10px;
+}
+
+.place {
+    padding: 10px;
+}
+
+.places, .contact-info {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.places p, .contact-info p {
+    color: rgb(104, 68, 24);
+}
+
+.places p:hover, .contact-info p:hover {
+    color: white;
+}
+
+.locations p {
+    text-align: start;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.icon {
+    font-size: 50px;
+    padding: 10px;
+    color: black;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.map {
+    width: 85%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.map iframe {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-title {
+    text-align: center;
+    padding: 10px;
+    color: rgb(207, 151, 82);
+}
+
+.cards-wrapper {
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.card {
+    width: 450px;
+    height: 550px;
+    /* background-color: coral; */
+    text-align: center;
+}
+
+.card-img {
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 90%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-desc {
+    background-color: rgb(207, 151, 82);
+    padding-top: 20px;
+}
+
+.click-to-go {
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.click-to-go button {
+    background-color: white;
+    color: rgb(207, 151, 82);
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 2px 2px 2px gray, 4px 4px 2px white, 6px 6px 2px gray;
+    transition: all 500ms;
+}
+
+.click-to-go button:hover {
+    box-shadow: 0px 0px 5px black;
+    transform: translateY(10px);
+  }
